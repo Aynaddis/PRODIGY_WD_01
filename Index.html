@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+
+    <header>
+        <a href="#" class="logo">Sweet Chips</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#flavors">Flavors</a></li>
+            <li><a href="#ingredients">Ingredients</a></li>
+            <li><a href="#contact">Contact</a></li>
+           
+             <li class="cart-icon">
+                <i class='bx bx-cart' id="cart-icon"></i>
+                <span class="cart-count">0</span>
+                <div class="cart-dropdown" id="cart-dropdown">
+                    <h3>Your Cart</h3>
+                    <ul id="cart-items"></ul>
+                    <p class="empty-cart-message">Your cart is empty.</p>
+                    <p class="cart-total">Total: $<span id="cart-total-price">0.00</span></p>
+                   
+                </div>
+            </li>
+        </ul>
+    </header>
+   
+    <!-- Home  Section-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Sweet Chips</h1>
+            <h2>The crunch you crave <br> in every bite</h2>
+            <a href="#flavors" class="btn">Explore Flavors</a>
+        </div>
+        <div class="home-img">
+            <img src="img/freepik__the-style-is-candid-image-photography-with-natural__22808.jpg" alt="Sweet Chips">
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/homepg.jpg" alt="About Us">
+        </div>
+        <div class="about-text">
+            <span>About Us</span>
+            <h2>We make the crunchiest <br> and tastiest chips</h2>
+            <p>At Sweet Chips, we believe in creating snacks that are not only delicious but also made with care. Our chips are crafted from the finest ingredients, ensuring every bite is packed with flavor and crunch. Whether you're enjoying them at home or on the go, Sweet Chips are the perfect snack for any occasion.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Flavors -->
+    <section class="flavors" id="flavors">
+        <div class="heading">
+            <div id="cart-container"></div>
+            <span>Flavors</span>
+            <h2>Explore our delicious flavors</h2>
+        </div>
+        <div class="flavors-container">
+            <!-- Box 1 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/chilly.jpg" alt="Classic Salted">
+                </div>
+                <h2>Chilly</h2>
+                <h3>Bold & Fiery</h3>
+                <span>$2.60</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+            <!-- Box 2 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/natural.jpg" alt="Barbecue">
+                </div>
+                <h2>Natural</h2>
+                <h3>Crunchy & natural</h3>
+                <span>$3.34</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/paparica.jpg" alt="Sour Cream & Onion">
+                </div>
+                <h2>Paparica</h2>
+                <h3>Crunchy & spicy</h3>
+                <span>$3.09</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+            <!-- Box 4 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="img/tomato.jpg" alt="Spicy Tomato">
+                </div>
+                <h2>Sweet Tomato</h2>
+                <h3>Crunchy & tasty</h3>
+                <span>$2.73</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section class="ingredients" id="ingredients">
+        <div class="heading">
+            <span>Ingredients</span>
+            <h2>We use only the finest ingredients</h2>
+        </div>
+
+        <div class="ingredients-container">
+            <!-- Box 1 -->
+            <div class="s-box">
+                <img src="img/potatos.jpg" alt="Fresh Potatoes">
+                <h3>Fresh Potatoes</h3>
+                <p>We source our potatoes from local farms, ensuring they are fresh and full of flavor. Each potato is carefully selected for the perfect crunch.</p>
+            </div>
+            <!-- Box 2 -->
+            <div class="s-box">
+                <img src="img/sunflower.jpg" alt="Natural Oils">
+                <h3>Natural Oils</h3>
+                <p>We use only natural, non-GMO oils to fry our chips, giving them a light and crispy texture without compromising on health.</p>
+            </div>
+            <!-- Box 3 -->
+            <div class="s-box">
+                <img src="img/spices.jpg" alt="Authentic Spices">
+                <h3>Authentic Spices</h3>
+                <p>Our spices are sourced from trusted suppliers around the world, ensuring every chip is bursting with authentic, bold flavors.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect -->
+    <section class="connect">
+        <div class="connect-text">
+            <span>Let's Talk</span>
+            <h2>Connect now</h2>
+        </div>
+        <a href="#contact" class="btn">Contact Us</a>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="contact-box">
+            <h3>Sweet Chips</h3>
+            <span>Connect With Us</span>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+            </div>
+        </div>
+        <div class="contact-box">
+            <h3>Quick Links</h3>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#flavors">Flavors</a></li>
+            <li><a href="#ingredients">Ingredients</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </div>
+        <div class="contact-box">
+            <h3>Legal</h3>
+            <li><a href="#Privacy Policy">Privacy Policy</a></li>
+            <li><a href="#Disclaimer">Disclaimer</a></li>
+            <li><a href="#Terms Of Use">Terms Of Use</a></li>
+        </div>
+        <div class="contact-box address">
+            <h3>Contact</h3>
+            <i class='bx bxs-map' ><span>123 Snack Street, Jimma City</span></i>
+            <i class='bx bxs-phone' ><span>+251-900000000</span></i>
+            <i class='bx bxs-envelope' ><span>info@sweetchips.com</span></i>
+        </div>
+    </section>
+
+    <!-- Comment Form -->
+    <section class="comment-form" id="comment-form">
+        <div class="heading">
+            <span>Contact Us</span>
+            <h2>We'd love to hear from you</h2>
+        </div>
+        <form id="commentForm" action="#" method="post">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="input-box">
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="input-box">
+                <textarea name="comment" placeholder="Your Comment" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>© Sweet Chips All Right Reserved.</p>
+    </div>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Link To JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
